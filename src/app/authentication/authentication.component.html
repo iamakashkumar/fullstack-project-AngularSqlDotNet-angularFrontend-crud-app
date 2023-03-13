@@ -1,0 +1,34 @@
+<div style="display:flex; justify-content: space-around">
+
+    <form class="m-5 p-5 bg-dark" #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
+        <div class="form-group">
+            <input type="name" class="form-control mb-2" name="Name" ngModel id="example" aria-describedby="" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control mb-2" name="Password" ngModel id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control mb-2" name="Email" ngModel id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+       <small class="text-light">Sign-up/update-login</small> 
+        <button type="submit" class="btn btn-success m-2">click me !</button>
+    </form>
+
+    <form class="m-5 p-5 bg-dark" #signupForm="ngForm" (ngSubmit)="(signupForm)">
+        <div class="form-group">
+            <input type="email" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <div class="form-group">
+                <input type="password" class="form-control mb-2" id="exampleInputPassword1" placeholder="Password">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary m-2">log-in</button>
+        <hr style="color: white">
+        <div class="form-group" style="display: flex; align-items: center;">
+            <input type="number" class="form-control m-2" style="height: 40px;" id="Otp" placeholder="Otp">
+            <button type="submit" class="btn btn-primary m-2" style="height: 40px;">Verify</button>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,20 @@
+
+  <form class="m-5 p-5 bg-success" #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+    <div class="form-group">
+      Employement Id
+      <input type="number"class="form-control" ngModel name="EmpId" required id="EmpId">
+    </div>
+    <div class="form-group">
+       Name
+      <input class="form-control" ngModel name="Name">
+    </div>
+    <div class="form-group">
+        Address
+        <input class="form-control" ngModel name="Address">
+      </div>
+      <div class="form-group">
+        Departmnet
+        <input class="form-control" ngModel name="Department">
+      </div>
+    <button class="btn btn-primary m-2">ADD / UPDATE</button>
+  </form> 

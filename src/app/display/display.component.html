@@ -1,0 +1,21 @@
+<br>
+<table class="table p-5 table-dark">
+    <thead class="p-5">
+      <tr class="p-5 table-success">
+        <th scope="col">EmpID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Dep</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody class="p-5">
+      <tr class="p-5" *ngFor="let emp of empData">
+        <td >{{emp.EmpId}}</td>
+        <td >{{emp.Name}}</td>
+        <td >{{emp.Address}}</td>
+        <td >{{emp.Department}}</td>
+        <td><button class="btn btn-primary m-2" (click)="deleteuser(emp)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
